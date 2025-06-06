@@ -1,0 +1,319 @@
+<!--<!DOCTYPE html>
+<html data-bs-theme="light" lang="es" style="font-weight: bold; width: auto;">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Frutas JABBA</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/Navbar-With-Button-icons.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        
+        <script type="text/javascript">
+            google.charts.load('current', { packages: ['corechart'] });
+            google.charts.setOnLoadCallback(drawProductosVendidos);
+            google.charts.setOnLoadCallback(drawGastos);
+            google.charts.setOnLoadCallback(drawIngresos);
+            google.charts.setOnLoadCallback(drawGanancias);
+            function drawProductosVendidos() {
+                const chartDiv = document.getElementById('productosVendidosChart');
+                var rawData = [
+                    ['Mes', 'Valor'],
+                    ['Enero', 1000],
+                    ['Febrero', 1170],
+                    ['Marzo', 660],
+                    ['Abril', 1030]
+                ];
+        
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', rawData[0][0]);
+                data.addColumn('number', rawData[0][1]);
+                data.addColumn({ type: 'string', role: 'style' });
+        
+                for (var i = 1; i < rawData.length; i++) {
+                    var mes = rawData[i][0];
+                    var valor = rawData[i][1];
+                    var anterior = i > 1 ? rawData[i - 1][1] : valor;
+                    var color = valor > anterior ? 'color: #367338' : 'color: #FF1E00'; // verde o rojo
+                    data.addRow([mes, valor, color]);
+                }
+        
+                var options = {
+                    width: chartDiv.clientWidth,
+                    height: 400,
+                    bar: { groupWidth: '60%' },
+                    legend: { position: 'none' }
+                };
+        
+                var chart = new google.visualization.ColumnChart(document.getElementById('productosVendidosChart'));
+                chart.draw(data, options);
+            }
+            function drawGastos() {
+                const chartDiv = document.getElementById('gastosChart');
+                var rawData = [
+                    ['Mes', 'Valor'],
+                    ['Enero', 1000],
+                    ['Febrero', 1170],
+                    ['Marzo', 660],
+                    ['Abril', 1030]
+                ];
+        
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', rawData[0][0]);
+                data.addColumn('number', rawData[0][1]);
+                data.addColumn({ type: 'string', role: 'style' });
+        
+                for (var i = 1; i < rawData.length; i++) {
+                    var mes = rawData[i][0];
+                    var valor = rawData[i][1];
+                    var anterior = i > 1 ? rawData[i - 1][1] : valor;
+                    var color = valor > anterior ? 'color: #FF1E00' : 'color: #367338'; // verde o rojo
+                    data.addRow([mes, valor, color]);
+                }
+        
+                var options = {
+                    width: chartDiv.clientWidth,
+                    height: 400,
+                    bar: { groupWidth: '60%' },
+                    legend: { position: 'none' }
+                };
+        
+                var chart = new google.visualization.ColumnChart(document.getElementById('gastosChart'));
+                chart.draw(data, options);
+            }
+            function drawIngresos() {
+                const chartDiv = document.getElementById('ingresosChart');
+                var rawData = [
+                    ['Mes', 'Valor'],
+                    ['Enero', 1000],
+                    ['Febrero', 1170],
+                    ['Marzo', 660],
+                    ['Abril', 1030]
+                ];
+        
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', rawData[0][0]);
+                data.addColumn('number', rawData[0][1]);
+                data.addColumn({ type: 'string', role: 'style' });
+        
+                for (var i = 1; i < rawData.length; i++) {
+                    var mes = rawData[i][0];
+                    var valor = rawData[i][1];
+                    var anterior = i > 1 ? rawData[i - 1][1] : valor;
+                    var color = valor > anterior ? 'color: #367338' : 'color: #FF1E00'; // verde o rojo
+                    data.addRow([mes, valor, color]);
+                }
+        
+                var options = {
+                    width: chartDiv.clientWidth,
+                    height: 400,
+                    bar: { groupWidth: '60%' },
+                    legend: { position: 'none' }
+                };
+        
+                var chart = new google.visualization.ColumnChart(document.getElementById('ingresosChart'));
+                chart.draw(data, options);
+            }
+            function drawGanancias() {
+                const chartDiv = document.getElementById('gananciasChart');
+                var rawData = [
+                    ['Mes', 'Valor'],
+                    ['Enero', 1000],
+                    ['Febrero', 1170],
+                    ['Marzo', 660],
+                    ['Abril', 1030]
+                ];
+        
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', rawData[0][0]);
+                data.addColumn('number', rawData[0][1]);
+                data.addColumn({ type: 'string', role: 'style' });
+        
+                for (var i = 1; i < rawData.length; i++) {
+                    var mes = rawData[i][0];
+                    var valor = rawData[i][1];
+                    var anterior = i > 1 ? rawData[i - 1][1] : valor;
+                    var color = valor > anterior ? 'color: #367338' : 'color: #FF1E00'; // verde o rojo
+                    data.addRow([mes, valor, color]);
+                }
+        
+                var options = {
+                    width: chartDiv.clientWidth,
+                    height: 400,
+                    bar: { groupWidth: '60%' },
+                    legend: { position: 'none' }
+                };
+        
+                var chart = new google.visualization.ColumnChart(document.getElementById('gananciasChart'));
+                chart.draw(data, options);
+            }
+            window.addEventListener('resize', drawProductosVendidos);window.addEventListener('resize', drawProductosVendidos);
+            window.addEventListener('resize', drawProductosVendidos);window.addEventListener('resize', drawGastos);
+            window.addEventListener('resize', drawProductosVendidos);window.addEventListener('resize', drawIngresos);
+            window.addEventListener('resize', drawProductosVendidos);window.addEventListener('resize', drawGanancias);
+        </script>        
+    </head>
+    <body style="width: 100%; color: rgb(0, 0, 0);">
+        <div class="container-fluid px-sm-1 px-md-3 px-lg-3" style="border-bottom: 1px solid rgba(0,0,0,0.25);">
+            <h3 style="color: black;">Resumen del dia</h3>
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="card mb-3">
+                        <div class="row g-0 align-items-center">                            
+                            <div class="col-sm-10 col-md-10 col-lg-9">
+                                <div class="card-body">                      
+                                    <p class="card-text">Ventas del dia</p>
+                                    <h3 class="card-title">₡25,200</h3>
+                                    <p class="card-text"><small class="text-success">+11% vs ayer</small></p>
+                                </div>
+                            </div>
+                            <div class="col-1 col-sm-2 col-md-2 col-lg-3">
+                                <span style="color: white; background-color: #8ecd89; border-radius: 100%; width: 50px; height: 50px;" class="d-flex justify-content-center align-items-center fs-2">₡</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>      
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="card mb-3">
+                        <div class="row g-0 align-items-center">                            
+                            <div class="col-sm-10 col-md-10 col-lg-9">
+                                <div class="card-body">                      
+                                    <p class="card-text">Pedidos activos</p>
+                                    <h3 class="card-title">60</h3>
+                                    <p class="card-text"><small class="text-success">+5 nuevos</small></p>
+                                </div>
+                            </div>
+                            <div class="col-1 col-sm-2 col-md-2 col-lg-3">
+                                <span style="color: white; background-color: #FF4D00; border-radius: 100%; width: 50px; height: 50px;" class="d-flex justify-content-center align-items-center fs-2">
+                                    <i class="fa-solid fa-cart-shopping" style="color: white;"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="card mb-3">
+                        <div class="row g-0 align-items-center">                            
+                            <div class="col-sm-10 col-md-10 col-lg-9">
+                                <div class="card-body">                      
+                                    <p class="card-text">Productos vendidos</p>
+                                    <h3 class="card-title">42</h3>
+                                    <p class="card-text"><small class="text-success">+14 vs ayer</small></p>
+                                </div>
+                            </div>
+                            <div class="col-1 col-sm-2 col-md-2 col-lg-3">
+                                <span style="color: white; background-color: #8ecd89; border-radius: 100%; width: 50px; height: 50px;" class="d-flex justify-content-center align-items-center fs-2">
+                                    <i class="fa fa-line-chart" style="color: white;"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>      
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="card mb-3">
+                        <div class="row g-0 align-items-center">                            
+                            <div class="col-sm-10 col-md-10 col-lg-9">
+                                <div class="card-body">                      
+                                    <p class="card-text">Clientes atendidos</p>
+                                    <h3 class="card-title">20</h3>
+                                    <p class="card-text"><small class="text-success">+11 vs ayer</small></p>
+                                </div>
+                            </div>
+                            <div class="col-1 col-sm-2 col-md-2 col-lg-3">
+                                <span style="background-color: #FF4D00; border-radius: 100%; width: 50px; height: 50px;" class="d-flex justify-content-center align-items-center fs-2">
+                                    <i class="fa-solid fa-users" style="color: white;"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>                    
+            </div>
+        </div>            
+        <div class="container px-sm-1 px-md-3 px-lg-3">
+            <div class="ms-5">
+                <h3>Productos vendidos</h3>
+                <form asp-controller="TuControlador" asp-action="TuAccion" method="get">
+                    <div class="d-flex align-items-center gap-2">
+                        <span>Filtrar por:</span>
+                        <div class="dropdown">
+                            <select class="form-select w-auto" name="productosVendidos" onchange="this.form.submit()">
+                                <option value="7" selected>Últimos 7 días</option>
+                                <option value="14">Últimos 14 días</option>
+                                <option value="30">Últimos 30 días</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="productosVendidosChart"></div>
+        </div>    
+        <div style="border-bottom: 1px solid rgba(0,0,0,0.25);"></div>    
+        <div class="container px-sm-1 px-md-3 px-lg-3">
+            <div class="ms-5">
+                <h3>Gastos</h3>
+                <form asp-controller="TuControlador" asp-action="TuAccion" method="get">
+                    <div class="d-flex align-items-center gap-2">
+                        <span>Filtrar por:</span>
+                        <div class="dropdown">
+                            <select class="form-select w-auto" name="gastos" onchange="this.form.submit()">
+                                <option value="7" selected>Últimos 7 días</option>
+                                <option value="14">Últimos 14 días</option>
+                                <option value="30">Últimos 30 días</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="gastosChart"></div>
+        </div>   
+        <div style="border-bottom: 1px solid rgba(0,0,0,0.25);"></div>    
+        <div class="container px-sm-1 px-md-3 px-lg-3">
+            <div class="ms-5">
+                <h3>Ingresos</h3>
+                <form asp-controller="TuControlador" asp-action="TuAccion" method="get">
+                    <div class="d-flex align-items-center gap-2">
+                        <span>Filtrar por:</span>
+                        <div class="dropdown">
+                            <select class="form-select w-auto" name="ingresos" onchange="this.form.submit()">
+                                <option value="7" selected>Últimos 7 días</option>
+                                <option value="14">Últimos 14 días</option>
+                                <option value="30">Últimos 30 días</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="ingresosChart"></div>
+        </div>  
+        <div style="border-bottom: 1px solid rgba(0,0,0,0.25);"></div>    
+        <div class="container px-sm-1 px-md-3 px-lg-3">
+            <div class="ms-5">
+                <h3>Ganancias</h3>
+                <form asp-controller="TuControlador" asp-action="TuAccion" method="get">
+                    <div class="d-flex align-items-center gap-2">
+                        <span>Filtrar por:</span>
+                        <div class="dropdown">
+                            <select class="form-select w-auto" name="ganancias" onchange="this.form.submit()">
+                                <option value="7" selected>Últimos 7 días</option>
+                                <option value="14">Últimos 14 días</option>
+                                <option value="30">Últimos 30 días</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="gananciasChart"></div>
+        </div>  
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>-->
+<div style="margin:0; padding:0; background-color:#f3f3f3; font-family:Arial, sans-serif; display:flex; justify-content:center; align-items:center; text-align:center;">
+  <div style="padding:20px; background-color:#ffffff; border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
+    <div style="font-size:48px; margin-bottom:10px;">⚠️</div>
+    <h1 style="margin-bottom:10px; color:#333333;">Estamos en mantenimiento</h1>
+    <p style="color:#666666;">Volveremos pronto. Gracias por tu paciencia.</p>
+  </div>
+</div>
+

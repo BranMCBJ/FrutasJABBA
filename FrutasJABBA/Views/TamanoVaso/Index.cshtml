@@ -1,0 +1,66 @@
+﻿@model IEnumerable<FrutasJABBA.Models.TamanoVaso>
+@{
+    ViewData["Title"] = "TamanoVaso Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h1>Tamaños de vaso</h1>
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Lista de tamaños</h2>
+        </div>
+        <div class="col-6 tetx-end">
+            <a asp-controller="TamanoVaso" asp-action="Create" class="btn btn-primary">Nuevo tamaño</a>
+        </div>
+    </div>
+    <br />
+    @if (Model.Count() > 0)
+    {
+        <table class="table  table-bordered table-striped" style="width:100%">
+            <thead>
+                Nombre categoria
+            </thead>
+            <thead>
+                Botones
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td width="100%">@item.Tamano oz</td>
+                        <td>
+                            <a asp-controller="TamanoVaso" asp-action="Edit" asp-route-IDTamano="@item.IDTamano">Editar</a>
+                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal-@item.IDTamano">
+                                Eliminar
+                            </button>
+
+                            <div class="modal fade" id="confirmDeleteModal-@item.IDTamano" tabindex="-1" aria-labelledby="modalLabel-@item.IDTamano" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modalLabel-@item.IDTamano">Confirmar Eliminación</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ¿Estás seguro que deseas eliminar el tamaño de vaso <strong>@item.Tamano oz</strong>?
+                                        </div>
+                                        <div class="modal-footer">
+                                            <form method="post" asp-controller="TamanoVaso" asp-action="Delete" asp-route-IDTamano="@item.IDTamano">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                <button type="submit" class="btn btn-danger">Eliminar</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No hay datos de tamaños que mostrar</p>
+    }
+</div>

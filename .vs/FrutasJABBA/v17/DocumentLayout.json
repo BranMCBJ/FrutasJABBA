@@ -1,0 +1,285 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|c:\\users\\estudiante-09\\downloads\\frutasjabba\\frutasjabba\\views\\fruta\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|solutionrelative:frutasjabba\\views\\fruta\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|c:\\users\\estudiante-09\\downloads\\frutasjabba\\frutasjabba\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|solutionrelative:frutasjabba\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|c:\\users\\estudiante-09\\downloads\\frutasjabba\\frutasjabba\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|solutionrelative:frutasjabba\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|c:\\users\\estudiante-09\\downloads\\frutasjabba\\frutasjabba\\models\\fruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|solutionrelative:frutasjabba\\models\\fruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|c:\\users\\estudiante-09\\downloads\\frutasjabba\\frutasjabba\\models\\estadofruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|solutionrelative:frutasjabba\\models\\estadofruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|c:\\users\\estudiante-09\\downloads\\frutasjabba\\frutasjabba\\controllers\\frutacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|solutionrelative:frutasjabba\\controllers\\frutacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|c:\\users\\estudiante-09\\downloads\\frutasjabba\\frutasjabba\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|solutionrelative:frutasjabba\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|c:\\users\\estudiante-09\\downloads\\frutasjabba\\frutasjabba\\viewsmodels\\frutaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|solutionrelative:frutasjabba\\viewsmodels\\frutaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|c:\\users\\estudiante-09\\downloads\\frutasjabba\\frutasjabba\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|solutionrelative:frutasjabba\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|c:\\users\\estudiante-09\\downloads\\frutasjabba\\frutasjabba\\controllers\\stockfrutacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|solutionrelative:frutasjabba\\controllers\\stockfrutacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|c:\\users\\estudiante-09\\downloads\\frutasjabba\\frutasjabba\\models\\paquetevaso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|solutionrelative:frutasjabba\\models\\paquetevaso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|c:\\users\\estudiante-09\\downloads\\frutasjabba\\frutasjabba\\views\\tamanovaso\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|solutionrelative:frutasjabba\\views\\tamanovaso\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|c:\\users\\estudiante-09\\downloads\\frutasjabba\\frutasjabba\\views\\tamanovaso\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|solutionrelative:frutasjabba\\views\\tamanovaso\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|c:\\users\\estudiante-09\\downloads\\frutasjabba\\frutasjabba\\controllers\\tamanovasocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|solutionrelative:frutasjabba\\controllers\\tamanovasocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|c:\\users\\estudiante-09\\downloads\\frutasjabba\\frutasjabba\\views\\tamanovaso\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|solutionrelative:frutasjabba\\views\\tamanovaso\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|c:\\users\\estudiante-09\\downloads\\frutasjabba\\frutasjabba\\migrations\\20250604185545_quintamigracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{248E405A-28DB-4179-B293-38755D9B4661}|FrutasJABBA\\FrutasJABBA.csproj|solutionrelative:frutasjabba\\migrations\\20250604185545_quintamigracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Fruta.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\Models\\Fruta.cs",
+              "RelativeDocumentMoniker": "FrutasJABBA\\Models\\Fruta.cs",
+              "ToolTip": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\Models\\Fruta.cs",
+              "RelativeToolTip": "FrutasJABBA\\Models\\Fruta.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwBoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T19:18:15.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EstadoFruta.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\Models\\EstadoFruta.cs",
+              "RelativeDocumentMoniker": "FrutasJABBA\\Models\\EstadoFruta.cs",
+              "ToolTip": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\Models\\EstadoFruta.cs",
+              "RelativeToolTip": "FrutasJABBA\\Models\\EstadoFruta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T23:34:42.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\Views\\Fruta\\Index.cshtml",
+              "RelativeDocumentMoniker": "FrutasJABBA\\Views\\Fruta\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\Views\\Fruta\\Index.cshtml",
+              "RelativeToolTip": "FrutasJABBA\\Views\\Fruta\\Index.cshtml",
+              "ViewState": "AgIAAI0BAAAAAAAAAAAIwKQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T23:07:33.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "FrutasJABBA\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "FrutasJABBA\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T23:11:48.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrutaController.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\Controllers\\FrutaController.cs",
+              "RelativeDocumentMoniker": "FrutasJABBA\\Controllers\\FrutaController.cs",
+              "ToolTip": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\Controllers\\FrutaController.cs",
+              "RelativeToolTip": "FrutasJABBA\\Controllers\\FrutaController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAkwDIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T23:10:38.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20250604185545_quintaMigracion.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\Migrations\\20250604185545_quintaMigracion.cs",
+              "RelativeDocumentMoniker": "FrutasJABBA\\Migrations\\20250604185545_quintaMigracion.cs",
+              "ToolTip": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\Migrations\\20250604185545_quintaMigracion.cs",
+              "RelativeToolTip": "FrutasJABBA\\Migrations\\20250604185545_quintaMigracion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T18:55:45.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\Views\\TamanoVaso\\Create.cshtml",
+              "RelativeDocumentMoniker": "FrutasJABBA\\Views\\TamanoVaso\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\Views\\TamanoVaso\\Create.cshtml",
+              "RelativeToolTip": "FrutasJABBA\\Views\\TamanoVaso\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T20:24:49.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\Views\\TamanoVaso\\Edit.cshtml",
+              "RelativeDocumentMoniker": "FrutasJABBA\\Views\\TamanoVaso\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\Views\\TamanoVaso\\Edit.cshtml",
+              "RelativeToolTip": "FrutasJABBA\\Views\\TamanoVaso\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T20:40:27.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FrutaViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\ViewsModels\\FrutaViewModel.cs",
+              "RelativeDocumentMoniker": "FrutasJABBA\\ViewsModels\\FrutaViewModel.cs",
+              "ToolTip": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\ViewsModels\\FrutaViewModel.cs",
+              "RelativeToolTip": "FrutasJABBA\\ViewsModels\\FrutaViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T20:40:02.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "FrutasJABBA\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "FrutasJABBA\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAOgAAAAAAAAAAAAIwD8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T22:50:40.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "FrutasJABBA\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "FrutasJABBA\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAIwBUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-03T00:58:23.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "FrutasJABBA\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "FrutasJABBA\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T19:26:34.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StockFrutaController.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\Controllers\\StockFrutaController.cs",
+              "RelativeDocumentMoniker": "FrutasJABBA\\Controllers\\StockFrutaController.cs",
+              "ToolTip": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\Controllers\\StockFrutaController.cs",
+              "RelativeToolTip": "FrutasJABBA\\Controllers\\StockFrutaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T14:05:03.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PaqueteVaso.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\Models\\PaqueteVaso.cs",
+              "RelativeDocumentMoniker": "FrutasJABBA\\Models\\PaqueteVaso.cs",
+              "ToolTip": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\Models\\PaqueteVaso.cs",
+              "RelativeToolTip": "FrutasJABBA\\Models\\PaqueteVaso.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T20:09:38.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TamanoVasoController.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\Controllers\\TamanoVasoController.cs",
+              "RelativeDocumentMoniker": "FrutasJABBA\\Controllers\\TamanoVasoController.cs",
+              "ToolTip": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\Controllers\\TamanoVasoController.cs",
+              "RelativeToolTip": "FrutasJABBA\\Controllers\\TamanoVasoController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA5wDQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T20:16:20.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\Views\\TamanoVaso\\Index.cshtml",
+              "RelativeDocumentMoniker": "FrutasJABBA\\Views\\TamanoVaso\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Estudiante-09\\Downloads\\FrutasJABBA\\FrutasJABBA\\Views\\TamanoVaso\\Index.cshtml",
+              "RelativeToolTip": "FrutasJABBA\\Views\\TamanoVaso\\Index.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAwAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T20:02:14.36Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+﻿@model IEnumerable<FrutasJABBA.Models.StockFruta>
+@{
+}
+@if (Model.Count() > 0)
+{
+    <h3>Registros de @Model.FirstOrDefault()?.Fruta.Nombre</h3>
+}
+<div class="container-fluid mt-2" style="border:1px solid rgba(0,0,0,0.25); border-radius: 10px;">
+    @if (Model.Count() > 0)
+    {
+        <table id="tablaFrutas" class="table table-bordered">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Precio</th>
+                <th>Peso total</th>
+                <th>Peso utilizable</th>
+                <th>Factor de usabilidad</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.IDStock</td>
+                    <td>₡ @item.Precio</td>
+                    <td>@item.PesoTotal g</td>
+                    <td>@item.PesoUtilizable g</td>
+                    <td>@item.FDU</td>
+                    <td class="btn-group" role="group">
+                        <button type="button" class="btn" style="background-color: #367338; color:white;" data-bs-toggle="modal" data-bs-target="#editStock-@item.IDStock">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button type="button" class="btn btn-danger" style="border-start-end-radius:5px; border-end-end-radius:5px;" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal-@item.IDStock">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+
+                        <div class="modal fade" id="confirmDeleteModal-@item.IDStock" tabindex="-1" aria-labelledby="modalLabel-@item.IDStock" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modalLabel-@item.IDStock">Confirmar Eliminación</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ¿Estás seguro que deseas eliminar el registro <strong>@item.IDStock</strong>?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <form method="post" asp-controller="StockFruta" asp-action="Delete" asp-route-IDStock="@item.IDStock">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                            <button type="submit" class="btn btn-danger">Eliminar</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="editStock-@item.IDStock" tabindex="-1" aria-labelledby="modalLabel-@item.IDStock" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modalLabel-@item.IDStock">Editar registro</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                    </div>
+                                    <form method="post" asp-controller="StockFruta" asp-action="Edit" asp-route-IDStock="@item.IDStock" asp-route-IDFruta="@item.IDFruta">
+                                        <div class="modal-body">
+                                            <label for="precio-@item.IDStock" class="form-label">Precio de compra:</label>
+                                            <div class="input-group mb-2">
+                                                <span class="input-group-text">₡</span>
+                                                    <input id="precio-@item.IDStock" class="form-control" name="Precio" type="number" value="@item.Precio.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture)" required />
+                                            </div>
+
+                                            <label for="pesoTotal-@item.IDStock" class="form-label">Peso total:</label>
+                                            <div class="input-group mb-2">
+                                                    <input class="form-control" name="PesoTotal" type="number" id="pesoTotal-@item.IDStock" step="0.01" value="@item.PesoTotal.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture)" required />
+                                                <span class="input-group-text">g</span>
+                                            </div>
+
+                                            <label for="pesoUtilizable-@item.IDStock" class="form-label">Peso utilizable:</label>
+                                            <div class="input-group mb-2">
+                                                    <input class="form-control" name="PesoUtilizable" type="number" id="pesoUtilizable-@item.IDStock" step="0.01" value="@item.PesoUtilizable.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture)" />
+                                                <span class="input-group-text">g</span>
+                                            </div>
+
+                                            <label for="fdu-@item.IDStock" class="form-label">Factor de Utilización (FDU):</label>
+                                            <input class="form-control mb-2" name="FDU" type="number" id="fdu-@item.IDStock"
+                                                   value="@item.FDU.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture)" readonly />
+
+                                            <script>
+                                                document.addEventListener("DOMContentLoaded", function () {
+                                                    const pesoTotalInput = document.getElementById("pesoTotal-@item.IDStock");
+                                                    const pesoUtilizableInput = document.getElementById("pesoUtilizable-@item.IDStock");
+                                                    const fduInput = document.getElementById("fdu-@item.IDStock");
+
+                                                    pesoTotalInput.addEventListener("input", function () {
+                                                        const pesoTotal = parseFloat(pesoTotalInput.value);
+                                                        const fdu = parseFloat(fduInput.value);
+
+                                                        if (!isNaN(pesoTotal) && !isNaN(fdu)) {
+                                                            pesoUtilizableInput.value = (pesoTotal * fdu / 100).toFixed(2);
+                                                        } else {
+                                                            pesoUtilizableInput.value = "";
+                                                        }
+                                                    });
+
+                                                    pesoUtilizableInput.addEventListener("input", function () {
+                                                        const pesoTotal = parseFloat(pesoTotalInput.value);
+                                                        const pesoUtilizable = parseFloat(pesoUtilizableInput.value);
+
+                                                        if (!isNaN(pesoTotal) && pesoTotal !== 0 && !isNaN(pesoUtilizable)) {
+                                                            fduInput.value = (pesoUtilizable / pesoTotal * 100).toFixed(2);
+                                                        } else {
+                                                            fduInput.value = "";
+                                                        }
+                                                    });
+                                                });
+                                            </script>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn btn-success">Aceptar</button>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+        </table>
+    }
+    else
+    {
+        <h4>No hay registros de esta fruta</h4>
+    }
+</div>
+
